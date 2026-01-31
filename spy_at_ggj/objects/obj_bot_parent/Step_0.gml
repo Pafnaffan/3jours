@@ -1,7 +1,7 @@
-path = path_add();
-if(mp_grid_path(global.grid,path,x,y,final_x_position,final_y_position,false)){
-	path_start(path,1,path_action_stop,true);
+if(keyboard_check(vk_f1)){
+	go_to_path();	
 }
+
 
 /*
 if((x == final_x_position && y == final_y_position)){
