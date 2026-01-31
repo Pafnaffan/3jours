@@ -6,10 +6,22 @@ y = follow.y+(global.cam_height/2)+24;
 x_find = 0;
 y_find = 0;
 
-time_duration = 50;
-time_restoration = 3*60; 
+time_duration = 5*60;
+time_restoration = 8*60; 
 
 find = true;
 used = false;
 
-visible = false;
+visible = true;
+
+function griser(){
+	sprite_index = spr_masque_rapidite_gray;	
+}
+
+function degriser(){
+	sprite_index = spr_masque_rapidite_down;
+}
+
+function found(){
+	visible = true;
+}
