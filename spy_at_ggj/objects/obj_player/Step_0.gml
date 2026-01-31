@@ -39,5 +39,5 @@ else if(y > target_y){
 }
 else if(x == target_x && y == target_y){
 	moving = false;
-	image_speed=1;
+	image_speed=0;
 }
