@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test",
+  "%Name":"obj_pc_parent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_test",
+  "name":"obj_pc_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Object",
-    "path":"folders/Object.yy",
+    "name":"furnitures",
+    "path":"folders/Object/furnitures.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_test",
-    "path":"sprites/spr_test/spr_test.yy",
+    "name":"Sprite4",
+    "path":"sprites/Sprite4/Sprite4.yy",
   },
   "spriteMaskId":null,
   "visible":true,

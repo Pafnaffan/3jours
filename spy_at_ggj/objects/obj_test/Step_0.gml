@@ -41,3 +41,21 @@ if(x == target_x && y == target_y){
 	moving = false;
 	image_speed=1;
 }
+
+
+if (keyboard_check_pressed(ord("E"))) {
+
+    pc = instance_nearest(x, y, obj_pc_parent);
+	show_debug_message(pc)
+	
+    if (pc != noone) {
+		show_debug_message("close")
+        if (point_distance(x, y, pc.x, pc.y) < 24) {
+            pc.get_idea_stolen();
+        }
+    }
+}
+
+
+
+

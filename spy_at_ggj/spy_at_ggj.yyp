@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Object","folderPath":"folders/Object.yy","name":"Object","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"furnitures","folderPath":"folders/Object/furnitures.yy","name":"furnitures","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Police","folderPath":"folders/Police.yy","name":"Police","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Room","folderPath":"folders/Room.yy","name":"Room","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Script","folderPath":"folders/Script.yy","name":"Script","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -29,11 +30,13 @@
   "name":"spy_at_ggj",
   "resources":[
     {"id":{"name":"obj_cam","path":"objects/obj_cam/obj_cam.yy",},},
+    {"id":{"name":"obj_pc_parent","path":"objects/obj_pc_parent/obj_pc_parent.yy",},},
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_case_test","path":"sprites/spr_case_test/spr_case_test.yy",},},
     {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},},
+    {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
     {"id":{"name":"tile_set_test","path":"tilesets/tile_set_test/tile_set_test.yy",},},
   ],
   "resourceType":"GMProject",
