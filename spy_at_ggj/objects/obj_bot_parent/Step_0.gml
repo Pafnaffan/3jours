@@ -32,6 +32,14 @@ function calculate_path(_x, _y) {
 }
 
 function bot_move_next_tile() {
+	show_debug_message(target_action)
+	if (has_path && target_action == TargetAction.SCARED) {
+		show_debug_message("scarrryyyy")
+		update_timer();
+		if (state_timer <= 0) {
+			reached_target();	
+		}
+	}
 
     if (!has_path) return;
     if (moving) return;
@@ -61,6 +69,7 @@ function bot_move_next_tile() {
 function go_eat_pizza() {
 	target_x = pizza_x_position;
 	target_y = pizza_y_position;
+	target_action = TargetAction.PIZZA;
 	set_state(BotState.MOVING);
 }
 
@@ -68,12 +77,20 @@ function go_back_to_pc() {
 	target_x = pc_x_position;
 	target_y = pc_y_position;
 	calculate_path(target_x, target_y);
+	target_action = TargetAction.CODE;
 	set_state(BotState.MOVING);
 }
 
 function reached_target() {
 	if (state == BotState.MOVING) {
-        set_state(BotState.CODING);
+		if (target_action == TargetAction.CODE) {
+			set_state(BotState.CODING);
+		} else if (target_action == TargetAction.PIZZA) {
+			set_state(BotState.EATING);
+		} else if (target_action == TargetAction.SCARED) {
+			show_debug_message("now coding");
+			set_state(BotState.CODING);	
+		}
     }
 }
 
@@ -83,17 +100,40 @@ function coding_at_pc() {
     }
 }
 
+function hufflen_is_here() {
+	if (target_action != TargetAction.SCARED) {
+		target_action = TargetAction.SCARED;
+		set_state(BotState.PANIC, 120);
+	}
+}
 
 function scared_of_hufflen() {
-	set_state(BotState.PANIC, 300);
-	// TODO : run away from hufflen
+    if (has_path && target_action == TargetAction.SCARED) {
+		update_timer();
+		if (state_timer <= 0) {
+			reached_target();	
+		}
+	}
+
+    escape_x = x + (x - obj_player.x) * 4;
+    escape_y = y + (y - obj_player.y) * 4;
+
+    calculate_path(escape_x, escape_y);
+
+    if (has_path) {
+        target_action = TargetAction.SCARED;
+        set_state(BotState.MOVING);
+    }
 }
 
 
-if (x < target_x) x++;
-if (x > target_x) x--;
-if (y < target_y) y++;
-if (y > target_y) y--;
+
+if (state == BotState.MOVING) {
+	if (x < target_x) x++;
+	if (x > target_x) x--;
+	if (y < target_y) y++;
+	if (y > target_y) y--;
+}
 
 if (x == target_x && y == target_y) {
     moving = false;
@@ -107,4 +147,8 @@ switch(state) {
 	case BotState.MOVING:
 		bot_move_next_tile();
 		break;
+	case BotState.PANIC:
+		scared_of_hufflen();
 }
+
+//show_debug_message(string(state));

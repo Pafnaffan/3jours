@@ -7,8 +7,15 @@ enum BotState {
 	CALLINGHELP
 }
 
-state = BotState.CODING
-state_timer = 0;
+enum TargetAction {
+	CODE,
+	PIZZA,
+	SCARED
+}
+
+target_action = TargetAction.CODE;
+state = BotState.PANIC;
+state_timer = 120;
 
 pc_x_position = x;
 pc_y_position = y;
@@ -26,6 +33,6 @@ has_path = false;
 _path_index = 0;
 path_length = 0;
 
-spd = 2;
+spd = 1;
 moving = false;
 image_speed = 0;

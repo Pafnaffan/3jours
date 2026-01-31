@@ -1,5 +1,5 @@
-target_x = 512;
-target_y = 480;
+target_x = x;
+target_y = y;
 
 moving = false;
 
