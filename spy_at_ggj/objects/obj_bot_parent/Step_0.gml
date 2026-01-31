@@ -1,5 +1,8 @@
-if(keyboard_check(vk_f1)){
-	go_to_path();	
+if (keyboard_check_pressed(vk_f1))
+{
+    final_x_position = mouse_x;
+    final_y_position = mouse_y;
+    go_to_path();
 }
 
 
