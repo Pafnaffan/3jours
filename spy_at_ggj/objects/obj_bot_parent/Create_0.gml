@@ -6,14 +6,14 @@ enum BotState {
 }
 
 state = BotState.STUN;
-state_timer = 120;
+
+count = 60;
 
 pc_x_position = 0;
 pc_y_position = 0;
-final_x_position = x;
-final_y_position = y;
-target_x = x;
-target_y = y;
+
+target_x = 0;
+target_y = 0;
 
 spd = 1;
 moving = false;
@@ -23,14 +23,3 @@ bot_sprite_up = spr_test;
 bot_sprite_down = spr_test;
 bot_sprite_left = spr_test;
 bot_sprite_right = spr_test;
-
-function go_to_path (){
-	show_debug_message("coucou")
-	path = path_add();
-	test = mp_grid_path(global.grid,path,x,y,final_x_position,final_y_position,false);
-	show_debug_message(string(test));
-	if(mp_grid_path(global.grid,path,x,y,final_x_position,final_y_position,false)){
-		path_start(path,1,path_action_stop,true);
-		show_debug_message("coucou2")
-	}
-}
