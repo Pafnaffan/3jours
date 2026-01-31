@@ -41,6 +41,7 @@
     {"id":{"name":"obj_hufflen","path":"objects/obj_hufflen/obj_hufflen.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
     {"id":{"name":"obj_plante","path":"objects/obj_plante/obj_plante.yy",},},
+    {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_rapidite","path":"objects/obj_rapidite/obj_rapidite.yy",},},
     {"id":{"name":"obj_raton_laveur","path":"objects/obj_raton_laveur/obj_raton_laveur.yy",},},
