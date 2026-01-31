@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"spy_at_ggj",
-    "path":"spy_at_ggj.yyp",
+    "name":"spr_placeholder",
+    "path":"folders/Sprite/spr_placeholder.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
