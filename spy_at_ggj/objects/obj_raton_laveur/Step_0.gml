@@ -1,4 +1,4 @@
-x = follow.x-(global.cam_width/2)+8;
+x = follow.x-(global.cam_width/2)+128;
 y = follow.y+(global.cam_height/2)+24;
 
 if(find){
@@ -6,11 +6,10 @@ if(find){
 }
 
 if(time_restoration <= 0){
-	sprite_index = spr_masque_hufflen_down;
+	sprite_index = spr_masque_raton_down;
 	time_restoration = 3*60;
 	used = false
 }
-
 
 if(used){
 	time_restoration--;	
@@ -21,4 +20,3 @@ function found(){
 }
 
 visible = true;
-
