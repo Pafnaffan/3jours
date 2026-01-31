@@ -1,3 +1,4 @@
+
 if(!moving){
 	if(keyboard_check(vk_up)){
 		moving = true;
@@ -51,11 +52,35 @@ if (keyboard_check_pressed(ord("E"))) {
     if (pc != noone) {
 		show_debug_message("close")
         if (point_distance(x, y, pc.x, pc.y) < 24) {
-            pc.get_idea_stolen();
+            global.steal_in_progress = true;
+            global.steal_timer = 0;
+            global.steal_target = pc;
         }
     }
 }
 
+if (global.steal_in_progress) {
+
+    global.steal_timer++;
+
+    if (global.steal_timer >= global.steal_duration) {
+        global.steal_target.get_idea_stolen();
+        global.steal_in_progress = false;
+        global.steal_target = noone;
+    }
+}
+
+if (global.dialog_active) {
+	if (keyboard_check_pressed(vk_space)) {
+
+		global.dialog_step++;
+
+		if (global.dialog_step > 1) {
+			global.dialog_active = false;
+			global.dialog_step = 0;
+		}
+	}
+}
 
 
 

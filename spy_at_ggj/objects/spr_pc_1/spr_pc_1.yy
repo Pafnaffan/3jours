@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pc_parent",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"spr_pc_1",
+  "eventList":[],
   "managed":true,
-  "name":"obj_pc_parent",
+  "name":"spr_pc_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"pc",
-    "path":"folders/Object/furnitures/pc.yy",
+    "name":"furnitures",
+    "path":"folders/Sprite/furnitures.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite4",
-    "path":"sprites/Sprite4/Sprite4.yy",
+    "name":"Sprite5",
+    "path":"sprites/Sprite5/Sprite5.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pc_parent",
+  "%Name":"obj_score",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pc_parent",
+  "name":"obj_score",
   "overriddenProperties":[],
   "parent":{
-    "name":"pc",
-    "path":"folders/Object/furnitures/pc.yy",
+    "name":"ui",
+    "path":"folders/Object/furnitures/ui.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite4",
-    "path":"sprites/Sprite4/Sprite4.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
