@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite4",
-    "path":"sprites/Sprite4/Sprite4.yy",
+    "name":"spr_bot1_down",
+    "path":"sprites/spr_bot1_down/spr_bot1_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

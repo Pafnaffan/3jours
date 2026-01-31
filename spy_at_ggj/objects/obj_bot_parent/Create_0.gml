@@ -17,16 +17,14 @@ target_action = TargetAction.CODE;
 state = BotState.PANIC;
 state_timer = 120;
 
-pc_x_position = x;
-pc_y_position = y;
+pc_x_position = 0;
+pc_y_position = 0;
 
-pizza_x_position = x+5;
-pizza_y_position = y+5;
+pizza_x_position = 100;
+pizza_y_position = 100;
 
 target_x = x;
 target_y = y;
-
-can_move = true;
 
 path_id = -1;
 has_path = false;
@@ -35,4 +33,9 @@ path_length = 0;
 
 spd = 1;
 moving = false;
+
 image_speed = 0;
+bot_sprite_up = spr_test;
+bot_sprite_down = spr_test;
+bot_sprite_left = spr_test;
+bot_sprite_right = spr_test;

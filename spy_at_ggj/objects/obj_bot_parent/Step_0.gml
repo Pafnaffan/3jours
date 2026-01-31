@@ -129,10 +129,10 @@ function scared_of_hufflen() {
 
 
 if (state == BotState.MOVING) {
-	if (x < target_x) x++;
-	if (x > target_x) x--;
-	if (y < target_y) y++;
-	if (y > target_y) y--;
+	if (x < target_x) x+= spd;
+	else if (x > target_x) x-= spd;
+	else if (y < target_y) y+= spd;
+	else if (y > target_y) y-= spd;
 }
 
 if (x == target_x && y == target_y) {
