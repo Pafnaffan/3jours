@@ -44,6 +44,10 @@ if (dist < view_distance) {
 			    path_end();
 			}
             state = OrgaState.CHASING;
+			if (!played_repere_audio) {
+				audio_play_sound(snd_repere, 2, 0);
+				played_repere_audio = true;
+			}
         }
     }
 }
@@ -51,6 +55,7 @@ if (dist < view_distance) {
 if (state == OrgaState.CHASING) {
     if (dist > view_distance + 40) {
         state = OrgaState.PATROL;
+		played_repere_audio = false;
         path_end();
     }
 }

@@ -221,6 +221,8 @@ function player_caught() {
 
     can_move = false;
     image_speed = 0;
+	audio_stop_all();
+	audio_play_sound(snd_mort, 2, 0);
 
     show_debug_message("GAME OVER");
 

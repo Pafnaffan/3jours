@@ -39,3 +39,5 @@ path_id = -1;
 
 prev_x = x;
 prev_y = y;
+
+played_repere_audio = false;
