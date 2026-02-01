@@ -1,3 +1,5 @@
+if (global.game_over) exit;
+
 if(!moving){
 	if(keyboard_check(vk_up)){
 		if(mp_grid_get_cell(global.grid,x/16,(y-16)/16) == 0){
@@ -216,3 +218,13 @@ if (global.dialog_active) {
 	}
 }
 
+
+function player_caught() {
+
+    can_move = false;
+    image_speed = 0;
+
+    show_debug_message("GAME OVER");
+
+    alarm[0] = 60;
+}
