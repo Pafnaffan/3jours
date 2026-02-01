@@ -7,3 +7,6 @@ mp_grid_add_instances(global.grid,obj_table_v,false);
 mp_grid_add_instances(global.grid,obj_table_h,false);
 mp_grid_add_instances(global.grid,obj_table2_v,false);
 mp_grid_add_instances(global.grid,obj_table2_h,false);
+
+
+audio_play_sound(snd_jeu, 1, 1);
