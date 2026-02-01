@@ -1,5 +1,5 @@
 video_open("intro.mp4");
 
-timer = 120;
+timer = 1200;
 
 skipped = false;
