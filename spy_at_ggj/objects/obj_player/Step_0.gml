@@ -76,6 +76,11 @@ if (global.steal_in_progress) {
         global.steal_in_progress = false;
         global.steal_target = noone;
     }
+	
+	if (moving) {
+		global.steal_in_progress = false;
+		global.steal_timer = 0;
+	}
 }
 
 if (global.dialog_active) {

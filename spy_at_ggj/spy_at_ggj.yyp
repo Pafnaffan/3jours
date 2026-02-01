@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Object","folderPath":"folders/Object.yy","name":"Object","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"bots","folderPath":"folders/Object/bots.yy","name":"bots","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"orga","folderPath":"folders/Object/bots/orga.yy","name":"orga","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"furniture","folderPath":"folders/Object/furniture.yy","name":"furniture","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"pc","folderPath":"folders/Object/furniture/pc.yy","name":"pc","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"items","folderPath":"folders/Object/items.yy","name":"items","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -43,6 +44,8 @@
     {"id":{"name":"fnt_text","path":"fonts/fnt_text/fnt_text.yy",},},
     {"id":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
+    {"id":{"name":"obj_bot_orga_parent","path":"objects/obj_bot_orga_parent/obj_bot_orga_parent.yy",},},
+    {"id":{"name":"obj_bot_orga_test","path":"objects/obj_bot_orga_test/obj_bot_orga_test.yy",},},
     {"id":{"name":"obj_bot_parent","path":"objects/obj_bot_parent/obj_bot_parent.yy",},},
     {"id":{"name":"obj_bot_test","path":"objects/obj_bot_test/obj_bot_test.yy",},},
     {"id":{"name":"obj_cam","path":"objects/obj_cam/obj_cam.yy",},},
