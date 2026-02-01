@@ -16,6 +16,7 @@ function get_idea_stolen() {
 		global.dialog_active = true;
 		global.dialog_step = 1;
 		stolen = true;
+		global.ideas_getted++;
 		return;
 	}
 

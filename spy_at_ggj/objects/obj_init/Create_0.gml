@@ -15,6 +15,7 @@ global.steal_in_progress = false;
 global.steal_target = noone;
 global.steal_speed = 1;
 
+global.ideas_getted=0;
 
 global.game_over = false;
 
@@ -39,4 +40,3 @@ global.idea_list = [
 ];
 
 room_goto(Room1);
-room_goto(rm_intro);
