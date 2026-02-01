@@ -137,7 +137,7 @@ if (keyboard_check_pressed(ord("E"))) {
 
 if (global.steal_in_progress) {
 
-    global.steal_timer++;
+    global.steal_timer += global.steal_speed;
 
     if (global.steal_timer >= global.steal_duration) {
         global.steal_target.get_idea_stolen();
