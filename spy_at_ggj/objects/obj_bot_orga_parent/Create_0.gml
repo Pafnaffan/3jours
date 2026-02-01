@@ -18,7 +18,7 @@ bot_sprite_left = spr_bot1_left;
 bot_sprite_right = spr_bot1_right;
 
 
-view_distance = 75;
+view_distance = 50;
 view_guard_angle = 60;
 // 0 = droite, 90 = haut, 180 = gauche, 270 = bas
 last_direction = 270;

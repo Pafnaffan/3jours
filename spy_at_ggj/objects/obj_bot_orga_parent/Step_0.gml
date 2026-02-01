@@ -7,7 +7,7 @@ if (vspeed > 0) last_dir = 270;
 target_x = obj_player.x;
 target_y = obj_player.y;
 
-if (state == OrgaState.PATROL) {
+/*if (state == OrgaState.PATROL) {
     if (count <= 0) {
         path = path_add();
         if (mp_grid_path(global.grid, path, x, y, target_x, target_y, false)) {
@@ -15,7 +15,7 @@ if (state == OrgaState.PATROL) {
         }
         count = 60;
     }
-}
+}*/
 
 
 if(state == OrgaState.CHASING){
@@ -33,7 +33,6 @@ count --;
 var dist = point_distance(x, y, obj_player.x, obj_player.y);
 
 if (dist < view_distance) {
-
     if (!collision_line(x, y, obj_player.x, obj_player.y, obj_block, true, true)) {
 
         var dir_to_player = point_direction(x, y, obj_player.x, obj_player.y);
