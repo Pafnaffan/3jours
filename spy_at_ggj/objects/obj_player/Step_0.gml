@@ -5,7 +5,20 @@ if(!moving){
 		if(mp_grid_get_cell(global.grid,x/16,(y-16)/16) == 0){
 			moving = true;
 			target_y -= 16;
-			sprite_index = spr_player_up;
+			switch(global.powered){
+				case power.HUFFLEN:
+					break;
+				case power.PLANTE:
+					break;
+				case power.RAPIDITE:
+					sprite_index = spr_player_speed_up;
+					break;
+				case power.RACCOON:
+					sprite_index = spr_player_raccoon_up;
+					break;
+				default:
+					sprite_index = spr_player_up;
+			}
 			image_speed=1;
 		}
 	}
@@ -13,7 +26,20 @@ if(!moving){
 		if(mp_grid_get_cell(global.grid,x/16,(y+16)/16) == 0){
 			moving = true;
 			target_y += 16;
-			sprite_index = spr_player_down;
+			switch(global.powered){
+				case power.HUFFLEN:
+					break;
+				case power.PLANTE:
+					break;
+				case power.RAPIDITE:
+					sprite_index = spr_player_speed_down;
+					break;
+				case power.RACCOON:
+					sprite_index = spr_player_raccoon_down;
+					break;
+				default:
+					sprite_index = spr_player_down;
+			}
 			image_speed=1;
 		}
 	}
@@ -21,7 +47,20 @@ if(!moving){
 		if(mp_grid_get_cell(global.grid,(x-16)/16,y/16) == 0){
 			moving = true;
 			target_x -= 16;
-			sprite_index = spr_player_left;
+			switch(global.powered){
+				case power.HUFFLEN:
+					break;
+				case power.PLANTE:
+					break;
+				case power.RAPIDITE:
+					sprite_index = spr_player_speed_left;
+					break;
+				case power.RACCOON:
+					sprite_index = spr_player_raccoon_left;
+					break;
+				default:
+					sprite_index = spr_player_left;
+			}
 			image_speed=1;
 		}
 	}
@@ -29,7 +68,20 @@ if(!moving){
 		if(mp_grid_get_cell(global.grid,(x+16)/16,y/16) == 0){
 			moving = true;
 			target_x += 16;
-			sprite_index = spr_player_right;
+			switch(global.powered){
+				case power.HUFFLEN:
+					break;
+				case power.PLANTE:
+					break;
+				case power.RAPIDITE:
+					sprite_index = spr_player_speed_right;
+					break;
+				case power.RACCOON:
+					sprite_index = spr_player_raccoon_right;
+					break;
+				default:
+					sprite_index = spr_player_right;
+			}
 			image_speed=1;
 		}
 	}
@@ -83,7 +135,8 @@ switch(global.powered){
 		if(raccoon_time_use == 0){
 			raccoon_time_use = 5*60;
 			global.powered = power.NONE;
-			//On change le skin et on lui enlève le pouvoir
+			global.steal_speed = global.steal_speed/2;
+			//On change le skin
 		}
 		break;
 }
