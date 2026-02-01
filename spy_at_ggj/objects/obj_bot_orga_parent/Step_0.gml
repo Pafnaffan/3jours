@@ -23,7 +23,7 @@ if(state == OrgaState.CHASING){
 	if(count <= 0){
 		path = path_add();
 		if(mp_grid_path(global.grid,path,x,y,target_x,target_y,false)){
-			path_start(path,1,path_action_stop,true);
+			path_start(path,0.8,path_action_stop,true);
 		}
 		count = 60;
 	}
@@ -66,7 +66,7 @@ if (state == OrgaState.PATROL) {
             path_id = path_add();
 
             if (mp_grid_path(global.grid, path_id, x, y, tx, ty, false)) {
-                path_start(path_id, 1, path_action_stop, false);
+                path_start(path_id, 0.5, path_action_stop, false);
             }
 
             patrol_index++;
