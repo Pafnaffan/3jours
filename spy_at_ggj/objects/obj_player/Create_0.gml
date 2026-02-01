@@ -51,6 +51,7 @@ global.steal_duration = 120;
 global.steal_timer = 0;
 global.steal_in_progress = false;
 global.steal_target = noone;
+global.steal_speed = 1;
 
 
 
