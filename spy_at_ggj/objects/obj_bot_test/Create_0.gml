@@ -1,7 +1,7 @@
 event_inherited();
 
-pc_x_position = obj_pc_1.x;
-pc_y_position = obj_pc_1.y+16;
+pc_x_position = 864;
+pc_y_position = 432;
 
 bot_sprite_up = spr_bot1_up;
 bot_sprite_down = spr_bot1_down;

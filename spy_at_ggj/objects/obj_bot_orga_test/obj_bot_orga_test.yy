@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bot1_down",
-    "path":"sprites/spr_bot1_down/spr_bot1_down.yy",
+    "name":"spr_bot_orga_down",
+    "path":"sprites/spr_bot_orga_down/spr_bot_orga_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,
