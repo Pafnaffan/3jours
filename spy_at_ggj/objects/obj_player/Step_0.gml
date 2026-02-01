@@ -1,14 +1,13 @@
 if (global.game_over) exit;
 
-if(!moving){
+if(!moving && global.powered != power.PLANTE){
 	if(keyboard_check(vk_up)){
 		if(mp_grid_get_cell(global.grid,x/16,(y-16)/16) == 0){
 			moving = true;
 			target_y -= 16;
 			switch(global.powered){
 				case power.HUFFLEN:
-					break;
-				case power.PLANTE:
+					sprite_index = spr_player_hufflen_up;
 					break;
 				case power.RAPIDITE:
 					sprite_index = spr_player_speed_up;
@@ -28,8 +27,7 @@ if(!moving){
 			target_y += 16;
 			switch(global.powered){
 				case power.HUFFLEN:
-					break;
-				case power.PLANTE:
+					sprite_index = spr_player_hufflen_down;
 					break;
 				case power.RAPIDITE:
 					sprite_index = spr_player_speed_down;
@@ -49,8 +47,7 @@ if(!moving){
 			target_x -= 16;
 			switch(global.powered){
 				case power.HUFFLEN:
-					break;
-				case power.PLANTE:
+					sprite_index = spr_player_hufflen_left;
 					break;
 				case power.RAPIDITE:
 					sprite_index = spr_player_speed_left;
@@ -70,8 +67,7 @@ if(!moving){
 			target_x += 16;
 			switch(global.powered){
 				case power.HUFFLEN:
-					break;
-				case power.PLANTE:
+					sprite_index = spr_player_hufflen_right;
 					break;
 				case power.RAPIDITE:
 					sprite_index = spr_player_speed_right;
@@ -110,7 +106,19 @@ switch(global.powered){
 		if(hufflen_time_use == 0){
 			hufflen_time_use = 5*60;
 			global.powered = power.NONE;
-			//On change le skin et on lui enlève le pouvoir
+			switch(sprite_index){
+				case spr_player_hufflen_down:
+					sprite_index = spr_player_down;
+					break;
+				case spr_player_hufflen_up:
+					sprite_index = spr_player_up;
+					break;
+				case spr_player_hufflen_left:
+					sprite_index = spr_player_left;
+					break;
+				default:
+					sprite_index = spr_player_right;
+			}
 		}
 		break;
 	case power.PLANTE:
@@ -118,7 +126,19 @@ switch(global.powered){
 		if(plante_time_use == 0){
 			plante_time_use = 5*60;
 			global.powered = power.NONE;
-			//On change le skin et on lui enlève le pouvoir
+			switch(sprite_index){
+				case spr_player_plante_down:
+					sprite_index = spr_player_down;
+					break;
+				case spr_player_plante_up:
+					sprite_index = spr_player_up;
+					break;
+				case spr_player_plante_left:
+					sprite_index = spr_player_left;
+					break;
+				default:
+					sprite_index = spr_player_right;
+			}
 		}
 		break;
 	case power.RAPIDITE:
@@ -127,7 +147,19 @@ switch(global.powered){
 			rapidite_time_use = 5*60;
 			global.powered = power.NONE;
 			spd = spd/2
-			//On change le skin 
+			switch(sprite_index){
+				case spr_player_speed_down:
+					sprite_index = spr_player_down;
+					break;
+				case spr_player_speed_up:
+					sprite_index = spr_player_up;
+					break;
+				case spr_player_speed_left:
+					sprite_index = spr_player_left;
+					break;
+				default:
+					sprite_index = spr_player_right;
+			}
 		}
 		break;
 	case power.RACCOON:
@@ -136,7 +168,19 @@ switch(global.powered){
 			raccoon_time_use = 5*60;
 			global.powered = power.NONE;
 			global.steal_speed = global.steal_speed/2;
-			//On change le skin
+			switch(sprite_index){
+				case spr_player_raccoon_down:
+					sprite_index = spr_player_down;
+					break;
+				case spr_player_raccoon_up:
+					sprite_index = spr_player_up;
+					break;
+				case spr_player_raccoon_left:
+					sprite_index = spr_player_left;
+					break;
+				default:
+					sprite_index = spr_player_right;
+			}
 		}
 		break;
 }

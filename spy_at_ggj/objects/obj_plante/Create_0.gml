@@ -3,13 +3,16 @@ follow = inst_test;
 x = follow.x-(global.cam_width/2)+48;
 y = follow.y+(global.cam_height/2)+24;
 
-x_find = 0;
-y_find = 0;
+visible = true; 
 
-time_duration = 50;
-time_restoration = 3*60; 
+function griser(){
+	sprite_index = spr_masque_plante_gray;	
+}
 
-find = true;
-used = false;
+function degriser(){
+	sprite_index = spr_masque_plante_down;
+}
 
-visible = false;
+function found(){
+	visible = true;
+}
