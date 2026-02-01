@@ -37,7 +37,10 @@
     {"$GMFolder":"","%Name":"TileSet","folderPath":"folders/TileSet.yy","name":"TileSet","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"final.mp4","CopyToMask":-1,"filePath":"datafiles","name":"final.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"intro.mp4","CopyToMask":-1,"filePath":"datafiles","name":"intro.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -58,6 +61,7 @@
     {"id":{"name":"obj_dialog","path":"objects/obj_dialog/obj_dialog.yy",},},
     {"id":{"name":"obj_hufflen","path":"objects/obj_hufflen/obj_hufflen.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
+    {"id":{"name":"obj_intro_mananger","path":"objects/obj_intro_mananger/obj_intro_mananger.yy",},},
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
     {"id":{"name":"obj_pc_1_side","path":"objects/obj_pc_1_side/obj_pc_1_side.yy",},},
     {"id":{"name":"obj_pc_1_up","path":"objects/obj_pc_1_up/obj_pc_1_up.yy",},},
@@ -80,6 +84,7 @@
     {"id":{"name":"obj_tp_up","path":"objects/obj_tp_up/obj_tp_up.yy",},},
     {"id":{"name":"obj_very_solid","path":"objects/obj_very_solid/obj_very_solid.yy",},},
     {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
+    {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
@@ -147,6 +152,7 @@
     {"roomId":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

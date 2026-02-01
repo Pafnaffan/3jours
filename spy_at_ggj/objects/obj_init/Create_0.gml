@@ -39,3 +39,4 @@ global.idea_list = [
 ];
 
 room_goto(Room1);
+room_goto(rm_intro);
