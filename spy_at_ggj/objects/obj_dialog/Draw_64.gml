@@ -12,7 +12,7 @@ if (global.dialog_active) {
 	draw_set_color(c_white);
 
 	if (global.dialog_step == 0) {
-		draw_text(40, box_y + 20, "Vous avez vole une idee !");
+		draw_text(40, box_y + 20, "Vous avez volé une idée !");
 		draw_text(40, box_y + 60, "[ESPACE]");
 	}
 
