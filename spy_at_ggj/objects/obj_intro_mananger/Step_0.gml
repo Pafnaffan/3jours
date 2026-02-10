@@ -8,4 +8,4 @@ if (keyboard_check_pressed(vk_space) && timer <= 0) {
 
 if (video_get_status() != video_status_playing && !skipped) {
 	game_end();	
-}
+} 
