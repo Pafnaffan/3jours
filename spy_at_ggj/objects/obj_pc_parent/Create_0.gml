@@ -1,2 +1,2 @@
-idea_worth = 100;
+idea_worth = 25;
 stolen = false;

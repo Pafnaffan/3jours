@@ -4,7 +4,7 @@ if (global.dialog_active) {
 
 	var box_y = display_get_gui_height() - 180;
 
-	draw_set_alpha(0.4);
+	draw_set_alpha(0.7);
 	draw_rectangle(20, box_y, display_get_gui_width() - 20, display_get_gui_height() - 20, false);
 	draw_set_alpha(1);
 
