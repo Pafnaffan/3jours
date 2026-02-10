@@ -24,7 +24,7 @@ if (qte_active) {
 	
 	if (add_letter && string_length(k) == 1) {
 		typed = string_lower(k);
-		expected = string_char_at(word, letter_index);
+		expected = string_lower(string_char_at(word, letter_index));
 		if (typed == expected) {
 			input += typed;	
 			letter_index++;
@@ -52,7 +52,8 @@ if (qte_active) {
 video_position = video_get_position();
 
 // change that to check if video_timer > (durée vidéo en seconde) * 60 + 60
-if (video_position >= video_get_duration())
+//if (qte_index >= array_length(qte_list))
+if (video_get_status() == video_status_closed)
 {
 	audio_stop_all();
     video_close();

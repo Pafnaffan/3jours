@@ -8,6 +8,7 @@ draw_set_font(fnt_boss);
 draw_set_colour(c_fuchsia);
 
 
+
 if (qte_active) {	
 	word_x = display_get_width()*0.45;
 	word_y = display_get_height()*0.9;

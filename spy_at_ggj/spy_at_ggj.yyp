@@ -38,7 +38,9 @@
     {"$GMFolder":"","%Name":"spr_player","folderPath":"folders/Sprite/spr_player.yy","name":"spr_player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"TileSet","folderPath":"folders/TileSet.yy","name":"TileSet","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"bigboss.mp4","CopyToMask":-1,"filePath":"datafiles","name":"bigboss.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"final.mp4","CopyToMask":-1,"filePath":"datafiles","name":"final.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
