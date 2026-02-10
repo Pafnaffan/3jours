@@ -28,7 +28,6 @@ font_enable_effects(fnt_boss, true, {
 });
 
 
-
 qte_list = [
     {frame: 60, word: "FRACASSE"},
     {frame: 372, word: "ENSANGLANTE"},
